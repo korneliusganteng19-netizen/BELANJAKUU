@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Checkout — BELANJAKU</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body data-page="checkout">
+<div id="site-header"></div>
+<main class="wrap" id="app">
+
+<div id="coWrap"><h1 style="font-size:1.4rem;margin-bottom:14px">Checkout</h1>
+<form class="two form" id="coForm"><div class="box"><h2>Alamat & Pengiriman</h2>
+ <label for="nama">Nama Penerima</label><input class="fld" id="nama" required>
+ <label for="hp">No. Telepon</label><input class="fld" id="hp" type="tel" required pattern="[0-9+ ]{9,15}" placeholder="08xxxxxxxxxx">
+ <label for="alamat">Alamat Lengkap</label><textarea class="fld" id="alamat" rows="3" required></textarea>
+ <label for="kurir">Kurir</label><select id="kurir"><option data-p="15000">Reguler (3-5 hari) — Rp15.000</option><option data-p="25000">Express (1-2 hari) — Rp25.000</option></select>
+ <label for="bayar">Metode Pembayaran</label><select id="bayar"><option>Transfer Bank</option><option>E-Wallet</option><option>COD (Bayar di Tempat)</option></select></div>
+ <div class="box sum"><h2>Ringkasan Pesanan</h2><div id="sumBox" style="display:block"></div><button class="btn btn-primary btn-block" style="margin-top:14px">Bayar Sekarang</button><a class="btn btn-outline btn-block" href="keranjang.html" style="margin-top:8px">Kembali ke Keranjang</a></div></form></div>
+</main>
+<div id="site-footer"></div>
+<div class="toast" id="toast" role="status"></div>
+<script src="js/products.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

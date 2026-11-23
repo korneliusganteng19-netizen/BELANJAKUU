@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Marketplace Jual Beli Online — BELANJAKU</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body data-page="index">
+<div id="site-header"></div>
+<main class="wrap" id="app">
+
+<section class="slider" aria-label="Promo">
+ <div class="slides">
+  <div class="slide" style="background:linear-gradient(120deg,#02850b,#4ade80)"><div><span class="tag">⚡ Flash Sale</span><h2>Diskon hingga 50%<br>Elektronik Pilihan</h2><p>Smart TV, speaker, dan gadget terbaik harga terbaik.</p><a class="btn" href="produk.html?cat=elektronik">Belanja Sekarang</a></div><div class="emo">📺</div></div>
+  <div class="slide" style="background:linear-gradient(120deg,#0f766e,#5eead4)"><div><span class="tag">🔥 Gadget Week</span><h2>Handphone & Laptop<br>Cicilan 0%</h2><p>Upgrade perangkatmu dengan penawaran spesial.</p><a class="btn" href="produk.html?cat=handphone">Lihat Promo</a></div><div class="emo">📱</div></div>
+  <div class="slide" style="background:linear-gradient(120deg,#be185d,#f9a8d4)"><div><span class="tag">👗 Fashion Fest</span><h2>Tampil Stylish<br>Mulai Rp45 Ribu</h2><p>Koleksi fashion pria & wanita terbaru.</p><a class="btn" href="produk.html?cat=wanita">Jelajahi</a></div><div class="emo">👗</div></div>
+ </div>
+ <button class="sl-btn prev" aria-label="Sebelumnya">‹</button><button class="sl-btn next" aria-label="Berikutnya">›</button><div class="dots"></div>
+</section>
+<section class="benefits">
+ <div class="ben"><span class="ic">🚚</span><div><b>Gratis Ongkir</b><small>Min. belanja Rp100.000</small></div></div>
+ <div class="ben"><span class="ic">🛡️</span><div><b>Belanja Aman</b><small>Garansi uang kembali</small></div></div>
+ <div class="ben"><span class="ic">💸</span><div><b>Harga Terbaik</b><small>Diskon setiap hari</small></div></div>
+ <div class="ben"><span class="ic">🎧</span><div><b>Bantuan 24/7</b><small>Siap membantu kamu</small></div></div>
+</section>
+<section class="sec"><div class="sec-h"><h2>Kategori Pilihan</h2></div><div class="cats" id="cats"></div></section>
+<section class="sec"><div class="sec-h"><h2>🔥 Produk Terlaris</h2><a href="produk.html?sort=sold">Lihat semua ›</a></div><div class="grid" id="best"></div></section>
+<section class="promos">
+ <a class="promo" href="produk.html?promo=1" style="background:linear-gradient(120deg,#f97316,#fbbf24)"><div><h3>Promo Gajian<br>Diskon 30%+</h3><p>Ribuan produk diskon spesial</p><span class="btn" style="background:#fff;color:#c2410c">Cek Promo</span></div><div class="emo">🏷️</div></a>
+ <a class="promo" href="produk.html?cat=makanan" style="background:linear-gradient(120deg,#1f2937,#4b5563)"><div><h3>Jajan Nusantara<br>Gratis Ongkir</h3><p>Kuliner khas dari seluruh Indonesia</p><span class="btn" style="background:#fff;color:#1f2937">Belanja</span></div><div class="emo">🍜</div></a>
+</section>
+<section class="sec"><div class="sec-h"><h2>✨ Rekomendasi Untukmu</h2><a href="produk.html">Lihat semua ›</a></div><div class="grid" id="reco"></div></section>
+<section class="sec"><div class="sec-h"><h2>🆕 Produk Terbaru</h2><a href="produk.html?new=1">Lihat semua ›</a></div><div class="grid" id="newp"></div></section>
+</main>
+<div id="site-footer"></div>
+<div class="toast" id="toast" role="status"></div>
+<script src="js/products.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+/* BELANJAKU - responsive */
+@media(max-width:1024px){
+ .cats{grid-template-columns:repeat(4,1fr)}.benefits{grid-template-columns:repeat(2,1fr)}
+ .ftr-g{grid-template-columns:1fr 1fr 1fr}.ftr-g>div:first-child{grid-column:1/-1}
+ .two{grid-template-columns:1fr}.slide{padding:0 40px}.slide .emo{font-size:7rem}}
+@media(max-width:768px){
+ .hdr-main{flex-wrap:wrap;height:auto;padding:10px 16px}.search{order:5;flex-basis:100%}
+ .catbtn{order:4}.auth{margin-left:auto}.logo{font-size:1.25rem}
+ .slider{height:240px}.slide{padding:0 22px}.slide h2{font-size:1.4rem}.slide .emo{font-size:4.5rem}.slide p{font-size:.8rem}
+ .promos{grid-template-columns:1fr}.detail{grid-template-columns:1fr}
+ .grid{grid-template-columns:repeat(2,1fr);gap:10px}.ftr-g{grid-template-columns:1fr 1fr}}
+@media(max-width:480px){
+ .cats{grid-template-columns:repeat(4,1fr);gap:8px}.cat{font-size:.68rem;padding:10px 2px}.cat span{width:42px;height:42px;font-size:1.3rem}
+ .benefits{grid-template-columns:1fr}.ci{grid-template-columns:64px 1fr}.ci>div:last-child{grid-column:1/-1}.ci img{width:64px;height:64px}
+ .auth .btn{padding:7px 10px}.sl-btn{display:none}}
